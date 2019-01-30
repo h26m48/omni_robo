@@ -1,0 +1,8 @@
+prefix=/home/uchida/omni_robo/devel
+
+Name: omni_nav
+Description: Description of omni_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/uchida/omni_robo/devel/lib 
+Requires: 

@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+
+<launch>
+	<node
+		  name="horizontal_laser"
+		  pkg="rplidar_ros"
+		  type="rplidarNode"
+		  output="screen">
+		  <param name="serial_port"      type="string" value="/dev/ttyUSB0"/>
+		  <param name="serial_baudrate"  type="int"    value="256000"/>
+		  <param name="frame_id"         type="string" value="/horizontal_laser_link"/>
+		  <param name="inverted"         type="bool"   value="false"/>
+		  <param name="angle_compensate" type="bool"   value="true"/>
+	</node>
+	
+	<node
+			name="omni_odom"
+			pkg="omni_odom"
+			type="omni_odom" />
+			
+	<node
+			name="body_odom"
+			pkg="omni_odom"
+			type="body_odom" />
+		
+		
+	<node 
+  		pkg="tf"
+      type="static_transform_publisher"
+      name="base_link_connect"
+      args="-0.1 0 0 0.735 0 0 /base_link /horizontal_laser_link 100" />
+      
+  
+  <!--<node
+      pkg="tf"
+      type="static_transform_publisher"
+      name="laser_link_connect"
+      args="0 0 0 0.735 0 0 /horizontal_laser_link /Lscan 100"/>-->
+      
+  <!--<node
+		name="keys_Publisher"
+		pkg="cmd_emulator"
+		type="keys_Publisher.py"/>
+		
+	<node
+		name="keys_to_Twist"
+		pkg="cmd_emulator"
+		type="keys_to_Twist.py"/>-->
+		
+	<!--<node 
+  	pkg="tf"
+    type="static_transform_publisher"
+    name="odom_connect"
+    args="0 0 0 0 0 0 /map /odom 100" />-->
+		
+	<node
+		name="rviz"
+		pkg="rviz"
+		type="rviz"/>
+		
+      
+
+  <!--<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />-->
+    
+</launch>

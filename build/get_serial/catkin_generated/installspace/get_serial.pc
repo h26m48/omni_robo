@@ -1,0 +1,8 @@
+prefix=/home/uchida/omni_robo/install
+
+Name: get_serial
+Description: Description of get_serial
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/uchida/omni_robo/install/lib 
+Requires: 

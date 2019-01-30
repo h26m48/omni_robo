@@ -1,0 +1,8 @@
+prefix=/home/uchida/omni_robo/devel
+
+Name: cmd_emulator
+Description: Description of cmd_emulator
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/uchida/omni_robo/devel/lib 
+Requires: 

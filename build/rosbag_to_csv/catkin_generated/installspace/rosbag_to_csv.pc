@@ -1,0 +1,8 @@
+prefix=/home/uchida/omni_robo/install
+
+Name: rosbag_to_csv
+Description: Description of rosbag_to_csv
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/uchida/omni_robo/install/lib 
+Requires: 

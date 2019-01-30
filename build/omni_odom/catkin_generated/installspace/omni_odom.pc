@@ -1,0 +1,8 @@
+prefix=/home/uchida/omni_robo/install
+
+Name: omni_odom
+Description: Description of omni_odom
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/uchida/omni_robo/install/lib 
+Requires: 

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<launch>
+	<node
+		name="keys_Publisher"
+		pkg="cmd_emulator"
+		type="keys_Publisher.py"/>
+		
+	<node
+		name="keys_to_Twist"
+		pkg="cmd_emulator"
+		type="keys_to_Twist.py"/>
+		
+</launch>

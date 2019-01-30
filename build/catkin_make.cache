@@ -1,0 +1,2 @@
+cmd_emulator:get_serial:omni_description:omni_nav:omni_odom:rosbag_to_csv:rplidar_ros-master
+-DCATKIN_DEVEL_PREFIX=/home/uchida/omni_robo/devel -DCMAKE_INSTALL_PREFIX=/home/uchida/omni_robo/install -G Unix Makefiles
